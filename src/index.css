@@ -1,0 +1,40 @@
+/******  GRAY  ******/
+/******  BACKGROUND COLORS  ******/
+/******  TEXT COLORS  ******/
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.k-navbar {
+  position: absolute;
+  height: 50px;
+  width: calc(100% - 20px);
+  display: flex;
+  background-color: #112fb4;
+  padding-left: 20px;
+  align-items: center;
+}
+.k-navbar .k-nav-item {
+  color: #e1e1e1;
+  font-size: 12pt;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  line-height: 46px;
+}
+.k-navbar .k-nav-item.selected {
+  background-color: #081c74;
+}
+.k-navbar .k-nav-item:hover {
+  background-color: #0c238b;
+}
+
+.k-main-page {
+  background: red;
+  width: 100%;
+  margin-top: 0;
+  padding: 10px 2px;
+  height: calc(100vh - 50px);
+}
+
+/*# sourceMappingURL=index.css.map */
