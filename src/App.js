@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css';
-import * as ReactBootStrap from "react-bootstrap";
-import CRUD from "./Components/CRUD.f";
 import Home from "./Components/Home";
-import DatosGlobales from "./Components/DatosGlobales";
 import Navbar from "./Components/Navbar";
 import {
     BrowserRouter as Router,
@@ -11,7 +8,8 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import AcData from './Components/AcData';
+import AcData from './Views/AcData';
+import GlobalData from './Views/GlobalData';
 
 function App () {
     return (
@@ -19,10 +17,9 @@ function App () {
             <Router>
                 <Navbar />
                 <Switch>
-                    <Route path="/home" component={Home} />
-                    <Route path="/rest" component={CRUD} />
-                    <Route path="/rest-test" component={AcData} />
-                    <Route path="/data" component={DatosGlobales} />
+                    <Route path="/" component={Home} exact />
+                    <Route path="/rest" component={AcData} />
+                    <Route path="/data" component={GlobalData} />
                 </Switch>
             </Router>
         </div>
